@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bodega Caseta Vella | Mallorca</title>
+<meta name="description" content="Bodega familiar en Santa Margalida, Mallorca. Vinos de producción muy reducida. Visitas y catas concertadas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="lang-switch" role="group" aria-label="Idioma">
+  <button type="button" data-lang="es" class="active">ES</button>
+  <button type="button" data-lang="ca">CA</button>
+  <button type="button" data-lang="en">EN</button>
+  <button type="button" data-lang="de">DE</button>
+</div>
+
+<div class="hero-video-wrap">
+  <header class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <img src="images/logo.png" alt="Logo Bodega Caseta Vella" class="hero-logo" onerror="this.style.display='none'">
+      <h1>Caseta Vella</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Somos una pequeña bodega de Mallorca que elabora vinos de calidad, de producción muy reducida.</p>
+      <a href="#catas" class="btn-primary" data-i18n="hero.cta">Reserva tu cata</a>
+    </div>
+  </header>
+
+  <div class="video-strip">
+    <video class="hero-video active" src="videos/video-1.mp4" autoplay muted playsinline disablePictureInPicture oncontextmenu="return false;"></video>
+    <video class="hero-video" muted playsinline disablePictureInPicture oncontextmenu="return false;"></video>
+  </div>
+</div>
+
+<section id="vinos" class="section wines">
+  <div class="section-header">
+    <span class="eyebrow" data-i18n="wines.eyebrow">Nuestra selección</span>
+    <h2 data-i18n="wines.title">Nuestros vinos</h2>
+  </div>
+
+  <div class="wine-grid">
+    <a class="wine-card" href="vinos/urooo.html">
+      <div class="wine-photo">
+        <img src="images/vino-1.png" alt="Urooo!" onerror="this.parentElement.classList.add('placeholder')">
+        <span class="placeholder-label" data-i18n="wine.photoAlt">Foto Urooo!</span>
+      </div>
+      <h3>Urooo! <span class="wine-year"><span data-i18n="wine.vintage">Añada</span> 2025</span></h3>
+      <span class="wine-price">14,00 &euro;</span>
+    </a>
+
+    <a class="wine-card" href="vinos/fora-por.html">
+      <div class="wine-photo">
+        <img src="images/vino-2.png" alt="Fora Por" onerror="this.parentElement.classList.add('placeholder')">
+        <span class="placeholder-label" data-i18n="wine.photoAlt2">Foto Fora Por</span>
+      </div>
+      <h3>Fora Por</h3>
+      <span class="wine-price">16,00 &euro;</span>
+    </a>
+
+    <a class="wine-card" href="vinos/primavera.html">
+      <div class="wine-photo">
+        <img src="images/vino-3.png" alt="Primavera de s'Hivern" onerror="this.parentElement.classList.add('placeholder')">
+        <span class="placeholder-label" data-i18n="wine.photoAlt3">Foto Primavera de s'Hivern</span>
+      </div>
+      <h3>Primavera de s'Hivern <span class="wine-year"><span data-i18n="wine.vintage">Añada</span> 2025</span></h3>
+      <span class="wine-price">15,00 &euro;</span>
+    </a>
+  </div>
+</section>
+
+<section id="catas" class="section tastings">
+  <div class="section-header">
+    <span class="eyebrow" data-i18n="catas.eyebrow">¿Nos quieres conocer?</span>
+    <h2 data-i18n="catas.title">Visitas y catas</h2>
+    <p class="section-intro" data-i18n="catas.intro">No tenemos un horario determinado: sólo recibimos visitas previamente concertadas, con al menos dos días de antelación.</p>
+  </div>
+
+  <div class="catas-grid">
+    <div class="map-block">
+      <h3 data-i18n="map.title">Dónde encontrarnos</h3>
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps?q=Bodega+Caseta+Vella&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa Bodega Caseta Vella"></iframe>
+      </div>
+      <p class="map-address">Carretera Santa Margalida&ndash;Can Picafort (Ma-3410), km 4,4<br>07450 Santa Margalida, Mallorca</p>
+    </div>
+
+    <form class="booking-form" id="booking-form">
+      <h3 data-i18n="booking.title">Solicita tu visita</h3>
+      <div class="form-row">
+        <label for="bf-email" data-i18n="form.email">Email</label>
+        <input type="email" id="bf-email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="bf-phone" data-i18n="form.phone">Teléfono</label>
+        <input type="tel" id="bf-phone" name="phone" required>
+      </div>
+      <div class="form-row form-row-split">
+        <div>
+          <label for="bf-people" data-i18n="form.people">Nº de personas</label>
+          <input type="number" id="bf-people" name="people" min="1" max="20" value="2" required>
+        </div>
+        <div>
+          <label for="bf-date" data-i18n="form.date">Fecha</label>
+          <input type="date" id="bf-date" name="date" required>
+        </div>
+      </div>
+      <button type="submit" class="btn-primary btn-block" data-i18n="form.submit">Enviar solicitud</button>
+    </form>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-block">
+      <h3 data-i18n="about.title">Sobre nosotros</h3>
+      <!-- TODO: sustituir por vuestra historia real -->
+      <p data-i18n="about.text">Somos una bodega familiar de Santa Margalida, en el corazón de Mallorca. Elaboramos vinos de producción muy reducida, cuidando cada paso desde la viña hasta la botella, con el mismo cariño con el que empezó esta casa hace generaciones.</p>
+    </div>
+    <div class="about-block">
+      <h3 data-i18n="about.sustainabilityTitle">Compromiso ambiental</h3>
+      <p data-i18n="about.sustainability">Como parte de su compromiso con la lucha contra el cambio climático y la reducción de emisiones de CO₂, la Bodega Caseta Vella ha llevado a cabo la instalación de un sistema fotovoltaico en la cubierta de sus instalaciones. La actuación ha consistido en la colocación de 42 paneles solares de 535 W y un inversor de 20 kW, lo que permitirá generar más de 35,88 MWh anuales de energía renovable y evitar la emisión de aproximadamente 16,40 toneladas de CO₂ al año. Este proyecto ha contado con una inversión total de 19.382,42 euros, de los cuales 11.580,66 euros han sido financiados a través de fondos NextGeneration EU en el marco del Plan de Recuperación, Transformación y Resiliencia.</p>
+    </div>
+  </div>
+
+  <div class="tasting-actions">
+    <a href="mailto:info@casetavella.com?subject=Reserva%20de%20cata" class="btn-secondary" data-i18n="actions.email">Email</a>
+    <a href="tel:+34659521073" class="btn-secondary" data-i18n="actions.call">Llamar</a>
+    <a href="https://wa.me/34659521073" target="_blank" rel="noopener" class="btn-secondary">WhatsApp</a>
+  </div>
+</section>
+
+<section id="contacto" class="section contact">
+  <div class="section-header light">
+    <span class="eyebrow" data-i18n="contact.eyebrow">Estamos aquí</span>
+    <h2 data-i18n="contact.title">Contacto</h2>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-item">
+      <h3 data-i18n="contact.address">Dirección</h3>
+      <p>Carretera Santa Margalida&ndash;Can Picafort (Ma-3410), km 4,4<br>07450 Santa Margalida, Mallorca</p>
+    </div>
+    <div class="contact-item">
+      <h3 data-i18n="contact.phone">Teléfono</h3>
+      <p><a href="tel:+34659521073">+34 659 52 10 73</a></p>
+    </div>
+    <div class="contact-item">
+      <h3 data-i18n="contact.emailLabel">Email</h3>
+      <p><a href="mailto:info@casetavella.com">info@casetavella.com</a></p>
+    </div>
+    <div class="contact-item">
+      <h3 data-i18n="contact.follow">Síguenos</h3>
+      <p>
+        <a href="https://www.facebook.com/bodegacasetavella" target="_blank" rel="noopener">Facebook</a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://www.instagram.com/bodegacasetavella" target="_blank" rel="noopener">Instagram</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Bodega Caseta Vella. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

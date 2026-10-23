@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fora Por | Bodega Caseta Vella</title>
+<meta name="description" content="Fora Por, vino tinto de Bodega Caseta Vella criado en barrica de roble francés. Syrah, Cabernet Sauvignon, Merlot y Mantonegro de Mallorca.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="lang-switch" role="group" aria-label="Idioma">
+  <button type="button" data-lang="es" class="active">ES</button>
+  <button type="button" data-lang="ca">CA</button>
+  <button type="button" data-lang="en">EN</button>
+  <button type="button" data-lang="de">DE</button>
+</div>
+
+<div class="detail-topbar">
+  <a href="../index.html#vinos" class="back-link" data-i18n="detail.back">&larr; Volver a la bodega</a>
+  <span class="brand">Caseta Vella</span>
+</div>
+
+<section class="section wine-detail">
+  <div class="wine-detail-grid">
+    <div class="wine-detail-photo">
+      <img src="../images/vino-2.png" alt="Fora Por">
+    </div>
+
+    <div class="wine-detail-info">
+      <span class="eyebrow">Vi de la Terra de Mallorca</span>
+      <h1>Fora Por <span class="wine-year" data-i18n="forapor.blendLabel">Ensamblaje 2022&ndash;2023</span></h1>
+      <span class="wine-price">16,00 &euro;</span>
+
+      <div class="wine-specs">
+        <div class="spec-row"><span class="spec-label" data-i18n="specs.type">Tipo de vino</span><span class="spec-value" data-i18n="forapor.type">Tinto criado en barrica de roble francés</span></div>
+        <div class="spec-row"><span class="spec-label" data-i18n="specs.blend">Ensamblaje</span><span class="spec-value" data-i18n="forapor.blendRow">50% añada 2022 (2 años de barrica), 50% añada 2023 (1 año de barrica)</span></div>
+        <div class="spec-row"><span class="spec-label" data-i18n="specs.varieties">Variedades</span><span class="spec-value">Syrah 51%, Cabernet Sauvignon 17%, Merlot 17%, Mantonegro 15%</span></div>
+        <div class="spec-row"><span class="spec-label" data-i18n="specs.abv">Grado alcohólico</span><span class="spec-value" data-i18n="forapor.abv">14%</span></div>
+        <div class="spec-row"><span class="spec-label" data-i18n="specs.servingTemp">Temperatura de servicio</span><span class="spec-value">16&ndash;18&nbsp;&ordm;C</span></div>
+        <div class="spec-row"><span class="spec-label" data-i18n="specs.production">Producción</span><span class="spec-value" data-i18n="forapor.production">1.654 botellas</span></div>
+      </div>
+
+      <h2 class="wine-note-title" data-i18n="wine.noteTitle">Nota de cata</h2>
+      <div class="wine-note">
+        <p data-i18n="forapor.note1">Color rojo picota con ribete violeta, capa media. Limpio y brillante. Intensidad aromática media. Sobresalen aromas a fruta negra, cassis, ciruela y mora. Ligeros toques balsámicos de eucalipto y regaliz. Aromas terciarios muy presentes: especias, caramelo, vainilla, cacao. Los tostados de las barricas muy bien integrados.</p>
+        <p data-i18n="forapor.note2">Entrada en boca cálida, amable. Un paso por boca bien estructurado, carnoso, equilibrado, sápido y de tanino pulido, con un final de boca largo. Es un vino armonioso, mediterráneo y elegante.</p>
+      </div>
+
+      <h2 class="wine-note-title" data-i18n="wine.vinificationTitle">Vinificación</h2>
+      <div class="wine-note">
+        <p data-i18n="forapor.vinification">La vendimia se realiza manualmente, seleccionando los racimos de uno en uno en el viñedo y recolectándolos en cajas de unos 12 kg. En bodega se estabiliza su temperatura durante 24 horas en cámara a 4-5ºC. Se realiza el desraspado seguido de una maceración prefermentativa en frío durante 24 horas. A la mañana siguiente se inicia la fermentación alcohólica en depósitos de acero inoxidable a una temperatura controlada de 25ºC. Se deja macerando 18 días y posteriormente, se prensa a bajas presiones. El vino producido ha pasado un mínimo de 12 meses en barricas de roble francés de 225L y un año en botella. Cada una de las variedades se elabora por separado y el ensamblaje se realiza después del paso por barrica.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section other-wines">
+  <h3 data-i18n="wine.discover">Descubre también</h3>
+  <div class="other-wines-grid">
+    <a class="other-wine-card" href="urooo.html">
+      <div class="wine-photo">
+        <img src="../images/vino-1.png" alt="Urooo!">
+      </div>
+      <span>Urooo!</span>
+    </a>
+    <a class="other-wine-card" href="primavera.html">
+      <div class="wine-photo">
+        <img src="../images/vino-3.png" alt="Primavera de s'Hivern">
+      </div>
+      <span>Primavera de s'Hivern</span>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Bodega Caseta Vella. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+</footer>
+
+<script src="../i18n.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>
